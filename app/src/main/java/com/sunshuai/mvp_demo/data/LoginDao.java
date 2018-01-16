@@ -5,11 +5,11 @@ package com.sunshuai.mvp_demo.data;
  */
 
 public interface LoginDao {
-    public void checkUser(String username, String password, CallbackCheck callbackCheck);
+    void checkUser(String username, String password, CallbackCheck callbackCheck);
 
-    public interface CallbackCheck {
-        public void onSuccess();
+    interface CallbackCheck {
+        void onSuccess();
 
-        public void onFail();
+        void onFail();
     }
 }
